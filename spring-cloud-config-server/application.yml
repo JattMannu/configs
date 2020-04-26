@@ -1,4 +1,16 @@
 my:
-  greeting: hello world
-  list.values: one,two,three
+  greeting: hello world from cofig server
+  list.values: one,two,three,four
   keyValue: "{name: 'Manpreet', age: 12}"
+
+app:
+  name: My App 
+  description: Welcome to ${app.name} config server from config
+
+# Lesson: ConfigurationProperties explained - Microservice configuration with Spring Boot [06]
+db:
+  user: admin_config_server
+  pass: admin_config_server
+  connectionString: "{connectionString: 'thisIsAConnectionString:132.4.212.12', user: ${db.user}, pass: ${db.pass}}"
+  host: 378.78.98.197
+  port: 1353
